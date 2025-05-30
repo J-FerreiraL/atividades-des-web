@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro Bolsa Família</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f9c712 20%, #ffffff 20% 40%, #1976d2 40% 60%, #00a651 60% 80%, #ff0000 80% 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .btn-success {
+      background-color: #00a651;
+      border-color: #00a651;
+    }
+
+    .btn-success:hover {
+      background-color: #008f43;
+      border-color: #008f43;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Cadastro do Bolsa Família</h2>
+  <form>
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome completo</label>
+      <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="cpf" class="form-label">CPF</label>
+      <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="dataNascimento" class="form-label">Data de nascimento</label>
+      <input type="date" class="form-control" id="dataNascimento" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="nis" class="form-label">Número do NIS</label>
+      <input type="text" class="form-control" id="nis" placeholder="Digite o número do NIS" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="mae" class="form-label">Nome da mãe</label>
+      <input type="text" class="form-control" id="mae" placeholder="Nome completo da mãe" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="endereco" class="form-label">Endereço completo</label>
+      <input type="text" class="form-control" id="endereco" placeholder="Rua, número, bairro, cidade, estado" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="telefone" class="form-label">Telefone</label>
+      <input type="tel" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+    </div>
+
+    <div class="mb-2">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+    </div>
+
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="termos" required>
+      <label class="form-check-label" for="termos">Declaro que as informações fornecidas são verdadeiras.</label>
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">Enviar Cadastro</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
